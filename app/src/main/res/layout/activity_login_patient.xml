@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patient_log_in">
+
+
+    <EditText
+        android:id="@+id/pat_login_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_email_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pat_login_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_password_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="password"
+        app:layout_constraintEnd_toEndOf="@+id/pat_login_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pat_login_email"
+        app:layout_constraintTop_toBottomOf="@+id/pat_login_email" />
+
+    <Button
+        android:id="@+id/pat_login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/pat_login_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pat_login_password"
+        app:layout_constraintTop_toBottomOf="@+id/pat_login_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <CheckBox
+        android:id="@+id/remember_me_box_pat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="#0886DA"
+        android:checked="true"
+        android:text="Remember me"
+        android:textColor="#3E56D3"
+        app:layout_constraintEnd_toEndOf="@+id/pat_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pat_login"
+        app:layout_constraintTop_toBottomOf="@+id/pat_login" />
+
+    <Button
+        android:id="@+id/pat_sign_up_link"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/remember_me_box_pat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/remember_me_box_pat"
+        app:layout_constraintTop_toBottomOf="@+id/remember_me_box_pat"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

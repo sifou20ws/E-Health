@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dunno">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ehealth">
+        <activity android:name=".Patient_how_to_use"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Patient_history"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Patient_send_report"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Doctor_Dashboared"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Sign_in_up"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SignUp_patient"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".login_patient"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SignUp_doctor"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Login_doctor"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Popup"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Ehealth.cTheme" />
+        <activity
+            android:name=".setting"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".health_monitoring"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activity1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

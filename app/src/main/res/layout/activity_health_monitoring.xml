@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".health_monitoring"
+    android:background="@drawable/health_monitoring_empty">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="63dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="@drawable/glucometer_logo" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="58dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tempurature_logo" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="78dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart_beat" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="76dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/pressure_logo" />
+
+    <Button
+        android:id="@+id/temp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/mybutton2"
+        android:fontFamily="@font/montserrat"
+        android:text="Tempurature"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/glucose"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/heartbeat"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/mybutton2"
+        android:fontFamily="@font/montserrat"
+        android:text="Heart Beat"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/glucose"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/mybutton2"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="glucose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/bloodpressure"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton2"
+        android:fontFamily="@font/montserrat"
+        android:text="Blood pressure"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/heartbeat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/heartbeat"
+        app:layout_constraintTop_toBottomOf="@+id/heartbeat"
+        app:layout_constraintVertical_bias="0.474" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patient_sign_up"
+    tools:context=".SignUp_patient">
+
+
+    <EditText
+        android:id="@+id/pat_signUp_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_name_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/pat_doctor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pat_doctor"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_doctor_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Doctor name"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pat_signUp_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_email_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pat_signUp_name"
+        app:layout_constraintStart_toStartOf="@+id/pat_signUp_name"
+        app:layout_constraintTop_toBottomOf="@+id/pat_signUp_name"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <EditText
+        android:id="@+id/pat_signUp_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/costume_input"
+        android:drawableStart="@drawable/costume_password_icon"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pat_doctor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pat_doctor"
+        app:layout_constraintTop_toBottomOf="@+id/pat_doctor"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/pat_signUp_create_account"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/mybutton2"
+        android:fontFamily="@font/montserrat"
+        android:text="Sign up"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pat_signUp_password"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/pat_signUp_email"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

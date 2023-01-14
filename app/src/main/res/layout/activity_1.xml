@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/welcome_patient"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="63dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:layout_constraintVertical_bias="0.035"
+            app:srcCompat="@drawable/send_report" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="58dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/health_monitoring" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="55dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="152dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/history" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="53dp"
+            android:layout_height="61dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.357"
+            app:srcCompat="@drawable/how_to_use" />
+
+        <Button
+            android:id="@+id/hm"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/mybutton2"
+            android:fontFamily="@font/montserrat"
+            android:text="Health Monitoring"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toTopOf="@+id/sr"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/hs"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/mybutton2"
+            android:fontFamily="@font/montserrat"
+            android:text="History"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.705"
+            app:layout_constraintStart_toEndOf="@+id/hm"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/sr"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/mybutton2"
+            android:fontFamily="@font/montserrat"
+            android:text="Send Report"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/hm"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView9" />
+
+        <Button
+            android:id="@+id/htu"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton2"
+            android:fontFamily="@font/montserrat"
+            android:text="How to use"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/hs"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/hs"
+            app:layout_constraintTop_toBottomOf="@+id/hs"
+            app:layout_constraintVertical_bias="0.474" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:visibility="gone"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

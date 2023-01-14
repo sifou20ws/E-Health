@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "92976218446",
+    "project_id": "ehealth-602c7",
+    "storage_bucket": "ehealth-602c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92976218446:android:c14d2c4a71da2f3e82de1f",
+        "android_client_info": {
+          "package_name": "com.example.dunno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92976218446-djg55sfbedakfs5gr5rbj1ei54qd79em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dunno",
+            "certificate_hash": "424129e9a6a58f4ea76612b2edfde3c8fb0f5125"
+          }
+        },
+        {
+          "client_id": "92976218446-v69403pvuq7s4i44pktdj7d41omrrqec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDthPjwygzh8Kbo6UgSNwM8caJmKSSCbDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92976218446-v69403pvuq7s4i44pktdj7d41omrrqec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
